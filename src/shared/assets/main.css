@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@layer utilities {
+  .app-container {
+    @apply mx-auto max-w-[1024px] px-4;
+  }
+}

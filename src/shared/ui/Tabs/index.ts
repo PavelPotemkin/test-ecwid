@@ -1,0 +1,1 @@
+export { default as UiTabs } from './Tabs.vue'
