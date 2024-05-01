@@ -3,7 +3,7 @@ import { CartPage, ProductDetailPage, HomePage, CategoryPage } from '@/pages'
 import routes from '@/shared/routes'
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.VITE_BASE_URL),
     routes: [
         {
             path: routes.home.path,
