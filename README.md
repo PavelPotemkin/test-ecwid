@@ -1,4 +1,4 @@
-# Test task for Frontend Developer position in company "Ecwid"
+# Test Task for the Frontend Developer Position at Ecwid
 
 ## Setup Instructions
 
