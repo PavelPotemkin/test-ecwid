@@ -3,22 +3,22 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
-export default ({ mode }) => {
+export default defineConfig(({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-  return defineConfig({
+  return {
     plugins: [
       vue(),
       VueDevTools(),
     ],
     server: {
       host: '0.0.0.0',
-      port: process.env.VITE_PORT
+      port: process.env.VITE_PORT as unknown as number,
     },
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     }
-  })
-}
+  }
+})
