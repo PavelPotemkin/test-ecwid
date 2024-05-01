@@ -7,7 +7,7 @@ import { type ProductId } from '@/features/products';
 import { CartProductAddToCartButton } from '@/features/cart';
 
 const props = defineProps<{
-    id: ProductId
+  id: ProductId
 }>()
 
 const { pending } = useAsyncState(() => productDetailApplication.useGetProduct()(props.id), { immediate: true });
@@ -38,7 +38,7 @@ const product = productDetailStore.useProduct()
         />
 
         <CartProductAddToCartButton
-          v-bind="props"
+          v-bind="product"
           class="sm:max-w-[200px]"
         />
       </div>

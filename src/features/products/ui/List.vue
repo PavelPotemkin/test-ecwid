@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ProductsList } from '../core/types';
+import type { ProductsList } from '../core/types';
 import ListItem from './ListItem.vue';
 
 defineProps<{
