@@ -5,6 +5,12 @@ on: [push]
 permissions:
   contents: write
 
+env:
+  DAY_OF_WEEK: Monday
+  VITE_BASE_URL: /test-ecwid
+  VITE_API_TOKEN: public_7BxbJGWyDaZfSQqjVS5Ftr4jzXkS43UD
+  VITE_BASE_API_URL: https://app.ecwid.com/api/v3/58958138/
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,11 +22,6 @@ jobs:
         run: |
           npm ci
           npm run build
-        env:  
-          VITE_QWE: ${{ secrets.VITE_TEST_VAR }}
-          VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
-          VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
-          VITE_BASE_API_URL: ${{ secrets.VITE_BASE_API_URL }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
