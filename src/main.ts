@@ -6,6 +6,8 @@ import { createPinia } from 'pinia'
 import { App } from '@/features/app'
 import router from './router'
 
+console.log(import.meta.env);
+
 createApp(App)
     .use(createPinia())
     .use(router)

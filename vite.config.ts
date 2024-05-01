@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => {
       vue(),
       VueDevTools(),
     ],
+    base: process.env.VITE_BASE_URL,
     server: {
       host: '0.0.0.0',
       port: process.env.VITE_PORT as unknown as number,
