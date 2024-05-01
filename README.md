@@ -1,6 +1,7 @@
 # Test Task for the Frontend Developer Position at Ecwid
 
 ## Setup Instructions
+To view the application in action, visit [here](https://pavelpotemkin.github.io/test-ecwid/).
 
 Follow these steps to set up your development environment:
 
