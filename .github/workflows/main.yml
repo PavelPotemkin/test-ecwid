@@ -6,7 +6,6 @@ permissions:
   contents: write
 
 env:
-  DAY_OF_WEEK: Monday
   VITE_BASE_URL: /test-ecwid
   VITE_API_TOKEN: public_7BxbJGWyDaZfSQqjVS5Ftr4jzXkS43UD
   VITE_BASE_API_URL: https://app.ecwid.com/api/v3/58958138/
