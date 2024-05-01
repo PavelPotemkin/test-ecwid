@@ -1,11 +1,17 @@
-# test-ecwid
+# Test task for Frontend Developer position in company "Ecwid"
 
-## Test task for Frontend Developer position in company "Ecwid"
+## Setup Instructions
 
-```
-cp .env.example .env
+Follow these steps to set up your development environment:
 
-fill env variables in .env file
+1. **Copy the `.env.example` file to create a new `.env` file:**
+   ```
+   cp .env.example .env
+   ```
 
-run 'npm run dev'
-```
+2. Fill in the environment variables in the .env file.
+
+3. Run the development server:
+    ```
+    npm run dev
+    ```
