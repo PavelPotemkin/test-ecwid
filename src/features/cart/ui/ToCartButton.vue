@@ -5,7 +5,8 @@ import routes from '@/shared/routes';
 import { cartApplication } from "../core/application";
 
 const router = useRouter()
-const link = computed(() => router.resolve({ name: routes.cart.name }).href)
+
+const link = computed(() => router.resolve({ name: routes.cart.name }).path)
 
 const cartCount = cartApplication.useCartCount()
 </script>

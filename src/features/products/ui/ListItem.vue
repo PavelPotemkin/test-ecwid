@@ -8,7 +8,7 @@ import { CartProductAddToCartButton } from '@/features/cart';
 const props = defineProps<ProductListItem>()
 
 const router = useRouter()
-const detailLink = computed(() => router.resolve({ name: routes.product.name, params: { id: props.id } }).href)
+const detailLink = computed(() => router.resolve({ name: routes.product.name, params: { id: props.id } }).path)
 
 const formatedPrice = computed(() => 
   new Intl.NumberFormat('ru-RU', { 

@@ -7,7 +7,7 @@ import { RouterLink, useRouter } from 'vue-router';
 const props = defineProps<CategoryListItem>()
 
 const router = useRouter()
-const detailLink = computed(() => router.resolve({ name: routes.category.name, params: { id: props.id } }).href)
+const detailLink = computed(() => router.resolve({ name: routes.category.name, params: { id: props.id } }).path)
 </script>
 
 <template>
